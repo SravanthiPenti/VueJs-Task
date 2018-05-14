@@ -1,0 +1,21 @@
+  <div>
+    <p>{{name}}</p>
+    <table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="employee in employees" :key="employee">
+      <td>{{employee.emp_name}}</td>
+      <td>{{employee.gender}}</td>
+      <td>{{employee.age}}</td>
+      <td>{{employee.email}}</td>
+    </tr>
+  </tbody>
+</table>
+ </div>

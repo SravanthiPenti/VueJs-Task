@@ -1,0 +1,17 @@
+  <div>
+    <div>
+      <p>{{name}}</p>
+        <hr>
+        <div>
+          <ul v-for='r in resources' :key="r">
+            <li>{{r.info}}</li>
+          </ul>
+        </div>
+  <router-link :to="{name:'sub1-1'}" tag="button" class="btn btn-sm btn-primary" active-class="active">1.1.1</router-link>
+  <router-link :to="{name:'sub1-2'}" tag="button" class="btn btn-sm btn-primary" active-class="active">1.1.2</router-link>
+  </div>
+  <br>
+<div>
+  <router-view></router-view>
+  </div>
+  </div>

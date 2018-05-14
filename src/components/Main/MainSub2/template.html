@@ -1,0 +1,32 @@
+<div>
+  <div>
+  <p>{{name}}</p>
+  <table class="table">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Category</th>
+       <th>Replies</th>
+      <th>Views</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="nav in navs" :key="nav">
+      <td>{{nav.topic}}</td>
+      <td>{{nav.Category}}</td>
+      <td>{{nav.Replies}}</td>
+      <td>{{nav.Views}}</td>
+       <td>{{nav.Activity}}</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+  <router-link :to="{name:'sub2-1'}" tag="button" class="btn btn-sm btn-primary" active-class="active" exact>1.2.1</router-link>
+  <router-link :to="{name:'sub2-2'}" tag="button" class="btn btn-sm btn-primary" active-class="active">1.2.2</router-link>
+</div>
+<br>
+<div>
+<router-view></router-view>
+</div>
+</div>

@@ -1,0 +1,21 @@
+<div>
+    <div>
+      <ul class="nav nav-pills">
+     <a @click="GotoMain" class="btn btn-info">Go to main</a>
+    <router-link :to="{name:'sub1-1'}" tag="li" class="nav-link btn btn-info"  active-class="active" exact>1.1</router-link>
+    <router-link :to="{name:'sub2-1'}" tag="li" class="nav-link btn btn-info" active-class="active">1.2</router-link>
+</ul>
+<div class="container">
+  <h6>{{page}}</h6>
+  <p align="center">{{name}}</p>
+  <hr>
+  <p>{{info}}</p>
+  </div>
+  </div>
+   <div class="container">
+ <router-view></router-view>
+ </div>
+ <div>
+ </div>
+ </div>
+ 
